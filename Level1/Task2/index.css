@@ -1,0 +1,46 @@
+h1{
+    color: rgb(58, 99, 135);
+    align-items: center;
+    margin-left: 510px;
+}
+h2{
+    color: rgb(23, 61, 94);
+    align-items: center;
+    margin-left: 628px;
+}
+
+
+button {
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 8px 18px;
+  touch-action: manipulation;
+  width: fit-content;
+  border: 0;
+  margin-left: 645px;
+  margin-top: 10px;
+}
+
+.button-16 {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  color: #3c4043;
+  cursor: pointer;
+  font-family: arial,sans-serif;
+  font-size: 14px;
+  height: 36px;
+  line-height: 27px;
+  text-align: center;
+  touch-action: manipulation;
+}
+
+form{
+    margin-left: 628px;
+}

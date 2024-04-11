@@ -1,42 +1,36 @@
-function changeColor() {
-    var button = document.getElementById("colorButton");
-    var randomColor = getRandomColor();
-    button.style.backgroundColor = randomColor;
-  }
+//Button Color
+const button = document.getElementById('colorButton');
 
-  function getRandomColor() {
-    var letters = '0123456789ABCDEF';
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
+button.addEventListener('click', function() {
+  const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+  button.style.backgroundColor = randomColor;
+});
+
+//Calculator
+function addNumbers() {
+      const num1 = parseFloat(document.getElementById('num1').value);
+      const num2 = parseFloat(document.getElementById('num2').value);
+      const result = num1 + num2;
+      document.getElementById('result').innerText = `Result: ${result}`;
     }
-    return color;
-  }
 
-  function displayGreeting() {
+//Greeting Popup
+function displayGreeting() {
     var currentTime = new Date();
     var currentHour = currentTime.getHours();
-
+    
     var greetingMessage;
-
-    if (currentHour < 12) {
-      greetingMessage = "Good morning!";
+    
+     if (currentHour < 12) {
+        greetingMessage = "Good morning!";
     } else if (currentHour < 18) {
-      greetingMessage = "Good afternoon!";
+        greetingMessage = "Good afternoon!";
     } else {
-      greetingMessage = "Good evening!";
+        greetingMessage = "Good evening!";
     }
-
+    
     alert(greetingMessage);
-  }
-
-  displayGreeting();
-
-  function calculate() {
-    var num1 = parseFloat(document.getElementById('num1').value);
-    var num2 = parseFloat(document.getElementById('num2').value);
-
-    var sum = num1 + num2;
-
-    document.getElementById('result').innerHTML = "The sum is: " + sum;
-  }
+    }
+    
+displayGreeting();
+      

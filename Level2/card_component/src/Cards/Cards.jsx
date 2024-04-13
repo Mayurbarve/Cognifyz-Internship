@@ -29,6 +29,7 @@ class Cards extends Component {
                         captivating galaxy residing in the constellation of Centaurus, is also one of the closest radio galaxies to Earth." links="
                          https://science.nasa.gov/image-detail/cena-lic-lp-nature-cropped/"/>
                 </div>
+                
             </div>
         </div>
         );
